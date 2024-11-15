@@ -1,0 +1,19 @@
+$TTL      604800
+@         IN        SOA      ns1.tenelectronica.int. root.tendaelectronica.int. (
+                               2                 ; Serial
+                           604800                 ; Refresh
+                            86400                 ; Retry
+                          2419200                 ; Expire
+                           604800 )               ; Negative Cache TTL
+; Registros NS
+@       in       NS          ns1.tendaelectronica.int.
+
+; Registros A
+ns1     IN       A           172.16.0.1
+WWW     IN       A           172.16.0.1
+
+; Registro CNAME
+alias   IN      CNAME        www
+
+; Registro TXT
+txtrecord   IN   TXT         "ESTE ES UN REGISTRO DE PUEVBA"

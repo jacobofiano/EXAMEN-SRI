@@ -1,0 +1,7 @@
+zone "tendaelectronica.int" {
+    type master;
+    file "/g/EXAMEN-SRI/bind-config/db.tendaelectronica.int";
+    allow-query {
+        any;
+    };
+};
